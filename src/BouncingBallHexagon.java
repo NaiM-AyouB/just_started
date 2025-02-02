@@ -5,6 +5,7 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 import javax.swing.*;
 
+//I didn't make this program i just liked it and copy it , maybe I will try to make my own in the future.
 public class BouncingBallHexagon extends JPanel implements ActionListener {
     private static final int PANEL_WIDTH = 800;
     private static final int PANEL_HEIGHT = 600;
