@@ -31,7 +31,7 @@
                      case '*':
                          System.out.println("The result = " + (x1 * x2));
                          break;
-                     case '/':
+                     case '/': //I used if, else here to prevent division by zero!
                          if (x2 == 0) {
                              System.out.println("Error: Division by zero!");
                          } else {
