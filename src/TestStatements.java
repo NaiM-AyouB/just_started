@@ -25,25 +25,18 @@
                  x2 = in.nextInt();  // Fixed typo from x1 to x2
      
                  switch (c) {
-                     case '+':
-                         System.out.println("The result = " + (x1 + x2));
-                         break;
-                     case '*':
-                         System.out.println("The result = " + (x1 * x2));
-                         break;
-                     case '/': //I used if, else here to prevent division by zero!
+                     case '+' -> System.out.println("The result = " + (x1 + x2));
+                     case '*' -> System.out.println("The result = " + (x1 * x2));
+                     case '/' -> {
+                         //I used if, else here to prevent division by zero!
                          if (x2 == 0) {
                              System.out.println("Error: Division by zero!");
                          } else {
                              System.out.println("The result = " + (x1 / x2));
                          }
-                         break;
-                     case '-':
-                         System.out.println("The result = " + (x1 - x2));
-                         break;
-                     default:
-                         System.out.println("Invalid operator entered!");
-                         break;
+                     }
+                     case '-' -> System.out.println("The result = " + (x1 - x2));
+                     default -> System.out.println("Invalid operator entered!");
                  }
              }
          }
